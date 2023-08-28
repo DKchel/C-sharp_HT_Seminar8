@@ -8,7 +8,6 @@
 // 9 5 3 2
 // 8 4 4 2
 
-using System.Globalization;
 
 Console.WriteLine("Введите первую размерность массива");
 int rows = Convert.ToInt32(Console.ReadLine());
