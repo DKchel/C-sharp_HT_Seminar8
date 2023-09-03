@@ -12,6 +12,8 @@ int rows1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число столбцов первой матрицы");
 int columns1 = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine();
+
 int[,] array = new int[rows1, columns1];
 
 for (int i = 0; i < array.GetLength(0); i++)

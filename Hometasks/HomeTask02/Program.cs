@@ -13,11 +13,12 @@ int rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите вторую размерность");
 int columns = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine();
 
 int[,] matrix = new int[rows, columns];
 
 int sum = 0;
-int sumMin = 999999;
+int sumMin = int.MaxValue;
 int rowNum = 0;
 
 for (int i = 0; i < matrix.GetLength(0); i++)
@@ -43,7 +44,6 @@ for (int i = 0; i < matrix.GetLength(0); i++)
         rowNum = i + 1;
     }
     sum = 0;
-    Console.WriteLine();
-
+    
 }
 Console.WriteLine("Строка с наименьшей суммой: " + rowNum);

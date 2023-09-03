@@ -15,6 +15,8 @@ int rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите вторую размерность массива");
 int columns = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine();
+
 int[,] array = new int[rows, columns];
 
 for (int i = 0; i < array.GetLength(0); i++)
@@ -25,10 +27,6 @@ for (int i = 0; i < array.GetLength(0); i++)
     }
 }
 
-PrintArray(array);
-SelectionSort(array);
-Console.WriteLine();
-PrintArray(array);
 
 void SelectionSort(int[,] array)
 {
@@ -65,5 +63,9 @@ void PrintArray(int[,] array)
     }
 }
 
+PrintArray(array);
+SelectionSort(array);
+Console.WriteLine();
+PrintArray(array);
 
 
